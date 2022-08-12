@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome to data structure program");
             LinkedList list = new LinkedList();
-            Console.WriteLine("1. press 1 to display\n2. press 2 to display append data\n3. press 3 Insert data between to element\n4. press 4 to delete node data");
+            Console.WriteLine("1. press 1 to display\n2. press 2 to display append data\n3. press 3 Insert data between to element\n4. press 4 to delete node data\n5.DeletLast Element in node");
             bool check = true;
             while (check)
             {
@@ -41,6 +41,14 @@
                         list.Add(56);
                         list.Add(70);
                         list.DeleteFirstNode();
+                        list.Display();
+                        break;
+                    case 5:
+
+                        Console.WriteLine("DeletLast Element in node");
+                        list.Add(56);
+                        list.Add(70);
+                        list.DeleteLastElement();
                         list.Display();
                         break;
                     default:

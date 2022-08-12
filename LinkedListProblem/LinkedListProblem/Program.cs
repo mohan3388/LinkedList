@@ -51,6 +51,16 @@
                         list.DeleteLastElement();
                         list.Display();
                         break;
+                    case 6:
+                        Console.WriteLine("search element");
+                        list.Add(56);
+                        list.Add(30);
+                        list.Add(70);
+
+                        int node = list.Search(70);
+                        Console.WriteLine("data position " + node);
+                        list.Display();
+                        break;
                     default:
                         Console.WriteLine("press above key");
                         break;

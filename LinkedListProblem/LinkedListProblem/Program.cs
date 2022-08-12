@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome to data structure program");
             LinkedList list = new LinkedList();
-            Console.WriteLine("1. press 1 to display\n2. press 2 to display append data\n3. press 3 Insert data between to element\n4. press 4 to delete node data\n5.DeletLast Element in node\n6. search Element\n7. insert Data at particular Position\n8. Delete Particual data node");
+            Console.WriteLine("1. press 1 to display\n2. press 2 to display append data\n3. press 3 Insert data between to element\n4. press 4 to delete node data\n5.DeletLast Element in node\n6. search Element\n7. insert Data at particular Position\n8. Delete Particual data node\n9. Sort data in Linked List");
             bool check = true;
             while (check)
             {
@@ -81,6 +81,10 @@
                         list.DeleteNodeParticularPosition(search);
                         list.LinkedListSize();
                         list.Display();
+                        break;
+                     case 9:
+                        Console.WriteLine("sorted element");
+                        list.SortOrderList();
                         break;
                     default:
                         Console.WriteLine("press above key");

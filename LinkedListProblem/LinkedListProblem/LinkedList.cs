@@ -140,6 +140,32 @@ namespace LinkedListProblem
             }
             Console.WriteLine("Linked list size " + count);
         }
+          public void SortOrderList()
+        {
+            Node current = head, index = null;
+            Node temp;
+            if (head == null)
+            {
+                return;
+            }
+
+            while (current != null)
+            {
+                index = current.next;
+                while (index != null)
+                {
+                    if (current.data.CompareTo(index.data) > 0)
+                    {
+                        temp = current.data;
+                        current.data = index.data;
+                        index.data = temp;
+                    }
+                    index = index.next;
+                }
+                current = current.next;
+            }
+            Display();
+        }
         public void Display()
         {
             Node temp = head;

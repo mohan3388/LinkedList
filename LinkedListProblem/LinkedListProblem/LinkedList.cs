@@ -80,6 +80,15 @@ namespace LinkedListProblem
             prev.next = node2;
             return this.head;
         }
+        public void DeleteFirstNode()
+        {
+            if (this.head == null)
+            {
+                Console.WriteLine("Link list is empty");
+            }
+            Node temp = this.head;
+            this.head = this.head.next;
+        }
         public void Display()
         {
             Node temp = head;
@@ -96,5 +105,6 @@ namespace LinkedListProblem
                 }
             }
         }
+
     }
 }
